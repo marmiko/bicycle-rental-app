@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.choiceTables.ChooseRodzajController">
+   <children>
+      <TableView id="wypozyczeniaTable" fx:id="table" prefHeight="501.0" prefWidth="869.0">
+         <columns>
+            <TableColumn fx:id="nazwaRodzaju" prefWidth="216.79995119571686" text="nazwa" />
+            <TableColumn fx:id="cenaZaDzienRodzaju" prefWidth="180.0" text="cena za dzień" />
+            <TableColumn fx:id="cenaZaMiesiacRodzaju" prefWidth="204.80001831054688" text="cena za miesiąc" />
+            <TableColumn fx:id="kaucjaRodzaju" minWidth="4.800048828125" prefWidth="155.20001220703125" text="kaucja" />
+            <TableColumn prefWidth="111.2000732421875" text="wolne" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

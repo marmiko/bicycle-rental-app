@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<databaseInfo>
+	<portNum>NrPortu</portNum>
+	<user>NazwaUzytkownika</user>
+	<passwd>Haslo</passwd>
+	<serviceName>NazwaSerwisu</serviceName>
+	<hostName>NazwaHosta</hostName>
+</databaseInfo>

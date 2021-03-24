@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.search.SearchUsterkaController">
+   <children>
+      <Label layoutX="26.0" layoutY="92.0" prefHeight="25.0" prefWidth="121.0" text="Data zgłoszenia:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="198.0" prefHeight="25.0" prefWidth="161.0" text="Pracownik naprawiający:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="header" layoutX="160.0" layoutY="27.0" prefHeight="30.0" prefWidth="181.0" text="Dane wyszukiwania:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="dodaj" layoutX="347.0" layoutY="418.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" text="Wyszukaj" />
+      <TextField fx:id="pracownikNaprawiajacy" layoutX="196.0" layoutY="198.0" />
+      <Button fx:id="wybierzPracownikaNaprawa" layoutX="365.0" layoutY="198.0" mnemonicParsing="false" text="Wybierz z listy" />
+      <Text fx:id="infoAlert" layoutX="24.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.5367431640625" />
+      <DatePicker fx:id="dataZgloszenia" layoutX="196.0" layoutY="92.0" />
+      <TextArea fx:id="opis" layoutX="196.0" layoutY="241.0" prefHeight="142.0" prefWidth="275.0" />
+      <Label layoutX="24.0" layoutY="241.0" prefHeight="25.0" prefWidth="102.0" text="Opis:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="127.0" prefHeight="25.0" prefWidth="121.0" text="Data naprawy:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dataNaprawy" layoutX="196.0" layoutY="127.0" />
+      <TextField fx:id="pracownikWpisujacy" layoutX="196.0" layoutY="161.0" />
+      <Label layoutX="24.0" layoutY="161.0" prefHeight="25.0" prefWidth="161.0" text="Pracownik zgłaszajacy:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="wybierzPracownikaZgloszenie" layoutX="365.0" layoutY="161.0" mnemonicParsing="false" text="Wybierz z listy" />
+   </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.choiceTables.ChooseModelController">
+   <children>
+      <TableView id="wypozyczeniaTable" fx:id="table" layoutX="6.0" layoutY="-1.0" prefHeight="502.0" prefWidth="972.0">
+         <columns>
+            <TableColumn fx:id="nazwaModelu" prefWidth="137.59997177124023" text="nazwa" />
+            <TableColumn fx:id="typModelu" prefWidth="127.20002746582031" text="typ" />
+            <TableColumn fx:id="rozmiarModelu" prefWidth="138.4000244140625" text="rozmiar" />
+            <TableColumn fx:id="cenaZaDzienModelu" minWidth="4.800048828125" prefWidth="119.99993896484375" text="cena za dzień" />
+            <TableColumn fx:id="cenaZaMiesiacModelu" minWidth="0.0" prefWidth="124.79998779296875" text="cena za miesiąc" />
+            <TableColumn fx:id="opisModelu" prefWidth="220.79998779296875" text="opis" />
+            <TableColumn fx:id="wolne" prefWidth="100.79998779296875" text="wolne" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

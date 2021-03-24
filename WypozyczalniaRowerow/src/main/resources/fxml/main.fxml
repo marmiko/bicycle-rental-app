@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="887.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.ViewTableController">
+  <tabs>
+    <Tab text="Wypożyczenia">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.1487" layoutX="373.0" layoutY="117.0" orientation="VERTICAL" prefHeight="593.6" prefWidth="887.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="724.0">
+                           <children>
+                              <HBox prefHeight="99.2" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="noweWypozyczenie" mnemonicParsing="false" text="Dodaj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="20.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="zwrocWypozyczenia" mnemonicParsing="false" prefHeight="26.0" prefWidth="57.0" text="Zwróć">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="modyfikujWypozyczenie" mnemonicParsing="false" text="Modyfikuj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usunWypozyczenia" mnemonicParsing="false" text="Usuń">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wyszukajWypozyczenia" mnemonicParsing="false" text="Wyszukiwanie">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="refreshWypozyczenia" mnemonicParsing="false" text="Odśwież">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <CheckBox fx:id="aktywneWypozyczenia" mnemonicParsing="false" prefHeight="18.0" prefWidth="108.0" text="tylko aktywne">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="724.0">
+                           <children>
+                              <TableView id="wypozyczeniaTable" fx:id="wypozyczeniaTable" layoutX="346.0" layoutY="83.0" prefHeight="500.8" prefWidth="885.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="checkedColumnWypozyczenia" prefWidth="40.800019800662994" />
+                                  <TableColumn fx:id="id_wypozyczenia" prefWidth="68.53324508666992" text="ID" />
+                                    <TableColumn fx:id="data_wypozyczenia" prefWidth="135.20003509521484" text="data wypożyczenia" />
+                                    <TableColumn fx:id="data_zwrotu" prefWidth="130.3999786376953" text="data zwrotu" />
+                                    <TableColumn fx:id="klient_nr_dowodu" minWidth="4.800048828125" prefWidth="115.20001220703125" text="klient" />
+                                    <TableColumn fx:id="id_prac" prefWidth="95.199951171875" text="pracownik" />
+                                    <TableColumn fx:id="id_roweru" prefWidth="89.60003662109375" text="rower" />
+                                    <TableColumn fx:id="id_akcesoria" prefWidth="94.39996337890625" text="akcesorium" />
+                                    <TableColumn prefWidth="116.0" text="cena" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Subskrybcje">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.1487" layoutX="373.0" layoutY="117.0" orientation="VERTICAL" prefHeight="593.6" prefWidth="887.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="724.0">
+                           <children>
+                              <HBox prefHeight="99.2" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="nowaSubskrybcja" mnemonicParsing="false" text="Dodaj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="20.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="zakonczSubskrybcje" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" text="Zakończ">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="modyfikujSubskrybcja" mnemonicParsing="false" text="Modyfikuj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usunSubskrybcje" mnemonicParsing="false" text="Usuń">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wyszukajSubskrybcje" mnemonicParsing="false" text="Wyszukiwanie">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="refreshSubskrybcje" mnemonicParsing="false" text="Odśwież">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <CheckBox fx:id="aktywneSubskrybcje" mnemonicParsing="false" text="tylko aktywne">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="724.0">
+                           <children>
+                              <TableView id="wypozyczeniaTable" fx:id="subskrybcjeTable" layoutX="346.0" layoutY="83.0" prefHeight="500.8" prefWidth="885.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="checkedColumnSubskrybcje" prefWidth="40.800019800662994" />
+                                    <TableColumn fx:id="klient_nr_dowodu" prefWidth="95.99995803833008" text="klient" />
+                                    <TableColumn fx:id="pracownik" prefWidth="70.666748046875" text="rower" />
+                                    <TableColumn fx:id="klient_nr_dowodu1" minWidth="4.800048828125" prefWidth="98.933349609375" text="akcesorium" />
+                                    <TableColumn fx:id="id_prac1" prefWidth="133.5999755859375" text="pracownik" />
+                                    <TableColumn fx:id="id_roweru1" prefWidth="155.46670532226562" text="data rozpoczęcia" />
+                                    <TableColumn fx:id="id_akcesoria1" prefWidth="141.333251953125" text="data zwrotu" />
+                                    <TableColumn prefWidth="142.4000244140625" text="cena za miesiąc" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+    <Tab text="Klienci">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.1487" orientation="VERTICAL" prefHeight="593.6" prefWidth="887.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="724.0">
+                           <children>
+                              <HBox prefHeight="99.2" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="nowyKlient" mnemonicParsing="false" text="Dodaj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="modyfikujKlient" mnemonicParsing="false" text="Modyfikuj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usunKlienci" mnemonicParsing="false" text="Usuń">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wyszukajKlienci" mnemonicParsing="false" text="Wyszukiwanie">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="refreshKlienci" mnemonicParsing="false" text="Odśwież">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="724.0">
+                           <children>
+                              <TableView id="wypozyczeniaTable" fx:id="klienciTable" layoutX="346.0" layoutY="83.0" prefHeight="500.8" prefWidth="885.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="checkedColumnKlienci" prefWidth="40.800019800662994" />
+                                    <TableColumn fx:id="nrDowoduKlienta" prefWidth="156.79992294311523" text="nr dowodu" />
+                                    <TableColumn fx:id="imieKlienta" prefWidth="228.80006408691406" text="imię" />
+                                    <TableColumn fx:id="nazwiskoKlienta" minWidth="4.800048828125" prefWidth="223.199951171875" text="nazwisko" />
+                                    <TableColumn fx:id="nrTelefonuKlienta" prefWidth="235.199951171875" text="nr telefonu" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Rowery">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.14874915483434753" orientation="VERTICAL" prefHeight="593.6" prefWidth="887.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="724.0">
+                           <children>
+                              <HBox prefHeight="99.2" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="nowyRower" mnemonicParsing="false" text="Dodaj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="modyfikujRower" mnemonicParsing="false" text="Modyfikuj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usunRowery" mnemonicParsing="false" text="Usuń">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wyszukajRowery" mnemonicParsing="false" text="Wyszukiwanie">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wypozyczRower" mnemonicParsing="false" text="Wypożycz">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="przeglady" mnemonicParsing="false" text="Przeglądy">
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usterki" mnemonicParsing="false" text="Usterki">
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="refreshRowery" mnemonicParsing="false" text="Odśwież">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="20.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="724.0">
+                           <children>
+                              <TableView id="wypozyczeniaTable" fx:id="roweryTable" layoutX="346.0" layoutY="83.0" prefHeight="500.8" prefWidth="885.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="checkedColumnRowery" prefWidth="40.800019800662994" />
+                                    <TableColumn prefWidth="101.59997177124023" text="ID" />
+                                    <TableColumn prefWidth="178.4001007080078" text="model" />
+                                    <TableColumn prefWidth="160.800048828125" text="status" />
+                                    <TableColumn minWidth="4.800048828125" prefWidth="187.99993896484375" text="kolor" />
+                                    <TableColumn fx:id="dataZakupuRoweru" prefWidth="211.199951171875" text="data zakupu" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Modele Rowerów">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.14874915483434753" orientation="VERTICAL" prefHeight="593.6" prefWidth="887.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="724.0">
+                           <children>
+                              <HBox prefHeight="99.2" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="nowyModel" mnemonicParsing="false" text="Dodaj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="modyfikujModel" mnemonicParsing="false" text="Modyfikuj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usunModele" mnemonicParsing="false" text="Usuń">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wyszukajModele" mnemonicParsing="false" text="Wyszukiwanie">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wypozyczModel" mnemonicParsing="false" text="Wypożycz">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="refreshModele" mnemonicParsing="false" text="Odśwież">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="724.0">
+                           <children>
+                              <TableView id="wypozyczeniaTable" fx:id="modeleRowerowTable" layoutX="346.0" layoutY="83.0" prefHeight="500.8" prefWidth="885.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="checkedColumnModele" prefWidth="40.800019800662994" />
+                                    <TableColumn fx:id="nazwaModelu" prefWidth="116.79998397827148" text="nazwa" />
+                                    <TableColumn fx:id="typModelu" prefWidth="108.00001525878906" text="typ" />
+                                    <TableColumn fx:id="rozmiarModelu" prefWidth="112.0" text="rozmiar" />
+                                    <TableColumn fx:id="cenaZaDzienModelu" minWidth="4.800048828125" prefWidth="98.4000244140625" text="cena za dzień" />
+                                    <TableColumn fx:id="cenaZaMiesiacModelu" minWidth="0.0" prefWidth="124.79998779296875" text="cena za miesiąc" />
+                                    <TableColumn fx:id="opisModelu" prefWidth="199.9998779296875" text="opis" />
+                                    <TableColumn prefWidth="81.60000000000002" text="wolne" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Akcesoria">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.14874915483434753" orientation="VERTICAL" prefHeight="593.6" prefWidth="887.2">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="724.0">
+                           <children>
+                              <HBox prefHeight="99.2" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="noweAkcesorium" mnemonicParsing="false" text="Dodaj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="modyfikujAkcesorium" mnemonicParsing="false" text="Modyfikuj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usunAkcesoria" mnemonicParsing="false" text="Usuń">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wyszukajAkcesoria" mnemonicParsing="false" text="Wyszukiwanie">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="refreshAkcesoria" mnemonicParsing="false" text="Odśwież">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="724.0">
+                           <children>
+                              <TableView id="wypozyczeniaTable" fx:id="akcesoriaTable" layoutX="346.0" layoutY="83.0" prefHeight="500.8" prefWidth="885.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="checkedColumnAkcesoria" prefWidth="40.800019800662994" />
+                                    <TableColumn fx:id="idAkcesoriumA" prefWidth="123.99996566772461" text="ID" />
+                                    <TableColumn fx:id="rodzajAkcesoriumNazwa" prefWidth="263.20005798339844" text="rodzaj" />
+                                    <TableColumn fx:id="statusAkcesorium" prefWidth="211.20001220703125" text="status" />
+                                    <TableColumn fx:id="dataZakupuAkcesorium" minWidth="4.800048828125" prefWidth="244.800048828125" text="data zakupu" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Rodzaje Akcesoriów">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.14874915483434753" orientation="VERTICAL" prefHeight="593.6" prefWidth="887.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="724.0">
+                           <children>
+                              <HBox prefHeight="99.2" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="nowyRodzaj" mnemonicParsing="false" text="Dodaj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="modyfikujRodzaj" mnemonicParsing="false" text="Modyfikuj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usunRodzaje" mnemonicParsing="false" text="Usuń">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wyszukajRodzaje" mnemonicParsing="false" text="Wyszukiwanie">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="refreshRodzaje" mnemonicParsing="false" text="Odśwież">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="724.0">
+                           <children>
+                              <TableView id="wypozyczeniaTable" fx:id="rodzajAkcesoriumTable" layoutX="346.0" layoutY="83.0" prefHeight="500.8" prefWidth="885.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="checkedColumnRodzaje" prefWidth="40.800019800662994" />
+                                    <TableColumn fx:id="nazwaRodzaju" prefWidth="187.19994735717773" text="nazwa" />
+                                    <TableColumn fx:id="cenaZaDzienRodzaju" prefWidth="178.3999786376953" text="cena za dzień" />
+                                    <TableColumn fx:id="cenaZaMiesiacRodzaju" prefWidth="180.79998779296875" text="cena za miesiąc" />
+                                    <TableColumn fx:id="kaucjaRodzaju" minWidth="0.0" prefWidth="176.79998779296875" text="kaucja" />
+                                    <TableColumn prefWidth="118.4000244140625" text="wolne" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Pracownicy">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.14874915483434753" orientation="VERTICAL" prefHeight="593.6" prefWidth="887.2">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="724.0">
+                           <children>
+                              <HBox prefHeight="99.2" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="nowyPracownik" mnemonicParsing="false" text="Dodaj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="modyfikujPracownik" mnemonicParsing="false" text="Modyfikuj">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="usunPracownicy" mnemonicParsing="false" text="Usuń">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="wyszukajPracownicy" mnemonicParsing="false" text="Wyszukiwanie">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="refreshPracownicy" mnemonicParsing="false" text="Odśwież">
+                                       <HBox.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="724.0">
+                           <children>
+                              <TableView id="wypozyczeniaTable" fx:id="pracownicyTable" layoutX="346.0" layoutY="83.0" prefHeight="500.8" prefWidth="885.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="checkedColumnPracownicy" prefWidth="40.800019800662994" />
+                                    <TableColumn fx:id="idPracP" prefWidth="101.59997177124023" text="ID" />
+                                    <TableColumn fx:id="imiePracownika" prefWidth="168.0000762939453" text="imię" />
+                                    <TableColumn fx:id="nazwiskoPracownika" prefWidth="178.39996337890625" text="nazwisko" />
+                                    <TableColumn fx:id="dataZatrudnienia" minWidth="4.800048828125" prefWidth="196.00006103515625" text="data zatrudnienia" />
+                                    <TableColumn fx:id="dataZwolnienia" prefWidth="198.4000244140625" text="data zwolnienia" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

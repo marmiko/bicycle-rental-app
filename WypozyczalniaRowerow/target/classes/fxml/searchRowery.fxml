@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.search.SearchRowerController">
+   <children>
+      <Label layoutX="34.0" layoutY="107.0" prefHeight="25.0" prefWidth="102.0" text="Model:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kolor" layoutX="139.0" layoutY="150.0" />
+      <Label layoutX="34.0" layoutY="150.0" prefHeight="25.0" prefWidth="102.0" text="Kolor:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="header" layoutX="75.0" layoutY="14.0" prefHeight="30.0" prefWidth="184.0" text="Dane wyszukiwania:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="dodaj" layoutX="201.0" layoutY="293.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" text="Zatwierdź" />
+      <ComboBox fx:id="model" layoutX="139.0" layoutY="107.0" prefWidth="150.0" />
+      <Text fx:id="infoAlert" layoutX="34.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.0" />
+      <Label layoutX="34.0" layoutY="190.0" prefHeight="25.0" prefWidth="102.0" text="Data zakupu:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dataZakupu" layoutX="139.0" layoutY="190.0" />
+      <Label layoutX="34.0" layoutY="229.0" prefHeight="25.0" prefWidth="102.0" text="Status:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="status" layoutX="139.0" layoutY="229.0" prefWidth="150.0" />
+      <TextField fx:id="rowerId" layoutX="138.0" layoutY="69.0" />
+      <Label layoutX="33.0" layoutY="69.0" prefHeight="25.0" prefWidth="102.0" text="ID:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

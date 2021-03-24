@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<databaseInfo>
+	<portNum>1521</portNum>
+	<user>inf141282</user>
+	<passwd>inf141282</passwd>
+	<serviceName>dblab02_students.cs.put.poznan.pl</serviceName>
+	<hostName>admlab2.cs.put.poznan.pl</hostName>
+</databaseInfo>

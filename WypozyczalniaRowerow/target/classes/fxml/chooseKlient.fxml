@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.choiceTables.ChooseKlientController">
+   <children>
+      <TableView id="wypozyczeniaTable" fx:id="table" prefHeight="500.8" prefWidth="885.6">
+         <columns>
+            <TableColumn fx:id="nrDowoduKlienta" prefWidth="229.60000306367874" text="nr dowodu" />
+            <TableColumn fx:id="imieKlienta" prefWidth="204.00001525878906" text="imię" />
+            <TableColumn fx:id="nazwiskoKlienta" minWidth="4.800048828125" prefWidth="213.5999755859375" text="nazwisko" />
+            <TableColumn fx:id="nrTelefonuKlienta" prefWidth="235.99993896484375" text="nr telefonu" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

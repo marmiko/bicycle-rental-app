@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.choiceTables.ChooseAkcesoriumController">
+   <children>
+      <TableView id="wypozyczeniaTable" fx:id="table" prefHeight="501.0" prefWidth="869.0">
+         <columns>
+            <TableColumn fx:id="idAkcesoriumA" prefWidth="175.99999392032623" text="ID" />
+            <TableColumn fx:id="rodzajAkcesoriumNazwa" prefWidth="253.60000610351562" text="rodzaj" />
+            <TableColumn fx:id="statusAkcesorium" prefWidth="200.80001831054688" text="status" />
+            <TableColumn fx:id="dataZakupuAkcesorium" minWidth="4.800048828125" prefWidth="236.00006103515625" text="data zakupu" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

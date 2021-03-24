@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.choiceTables.ChoosePracownikController">
+   <children>
+      <TableView id="wypozyczeniaTable" fx:id="table" prefHeight="501.0" prefWidth="869.0">
+         <columns>
+            <TableColumn fx:id="idPracP" prefWidth="119.19998323917389" text="ID" />
+            <TableColumn fx:id="imiePracownika" prefWidth="172.80004119873047" text="imię" />
+            <TableColumn fx:id="nazwiskoPracownika" prefWidth="196.800048828125" text="nazwisko" />
+            <TableColumn fx:id="dataZatrudnienia" minWidth="4.800048828125" prefWidth="187.99996948242188" text="data zatrudnienia" />
+            <TableColumn fx:id="dataZwolnienia" prefWidth="203.20001220703125" text="data zwolnienia" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>
